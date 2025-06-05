@@ -57,10 +57,17 @@ Ballzzi은 축구 선수 정보와 회사 내부 정보를 모두 처리할 수 
 
 ## II. 시스템 아키텍처 
 
-### 1. 전체 플로우차트
+### 1. - 전체 프로세스 흐름도 (Main Flowchart)
+
 ![image](https://github.com/user-attachments/assets/c902a87e-b68c-46b0-b1ec-50e5dfec27dd)
 
-### 2. 서브 플로우차트 - 질문 자동 분류 (FM / HR 질문 라우팅)
+### 2. 세부 프로세스 흐름도 - FM / HR 질문 라우팅 (Sub Flowchart - Automated Question Classification)
+이렇게 표현하면:
+- "플로우 차트" → "프로세스 흐름도"로 통일하여 기술적 문서에서 일관성을 유지할 수 있습니다.
+- "서브 플로우 차트"라는 표현보다는 "세부 프로세스 흐름도"가 더 직관적으로 이해될 수 있습니다.
+- 영어 설명을 추가하여 필요할 때 국제적인 문서에서도 활용할 수 있도록 정리할 수 있습니다.
+혹시 더 다듬거나 추가하고 싶은 부분이 있나요? 또는 다이어그램의 목적을 고려하여 표현을 조금 더 다르게 정리하고 싶으신가요?
+
 <img src="https://github.com/user-attachments/assets/940c4d10-adc9-4726-92d0-d81fe09f1106" width="100%"></td>
 
 
