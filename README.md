@@ -216,14 +216,11 @@ streamlit run app.py
 
 ### 데이터베이스
 - **축구 선수 DB**: 788KB SQLite 파일
-- **HR 벡터 DB**: FAISS 인덱스 (Windows/조직별)
-- **학습 데이터**: 14MB JSONL 파일
+- **HR 벡터 DB**: FAISS 인덱스 (사내 규정/인사 구조)
 
 ## :wrench: 개발 도구
 
 ### 디버깅 & 테스트
-- `check_project.py`: 프로젝트 상태 점검
-- `streamlit_test/`: 별도 테스트 환경
 - Verbose 모드로 LangChain 에이전트 실행 로그 확인
 
 ### 확장성
