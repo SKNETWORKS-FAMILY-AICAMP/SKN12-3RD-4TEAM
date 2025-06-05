@@ -57,11 +57,11 @@ Ballzzi은 축구 선수 정보와 회사 내부 정보를 모두 처리할 수 
 
 ## II. 시스템 아키텍처 
 
+# 다이어그램
 ![image](https://github.com/user-attachments/assets/c902a87e-b68c-46b0-b1ec-50e5dfec27dd)
-<img src="https://github.com/user-attachments/assets/940c4d10-adc9-4726-92d0-d81fe09f1106" width="50%" align="left">
 
-<img src="https://github.com/user-attachments/assets/76a1f79b-e41e-47e9-9d9c-2b26093cee0d" width="45%" align="right">
-
+# 라우팅 순서도
+<img src="https://github.com/user-attachments/assets/940c4d10-adc9-4726-92d0-d81fe09f1106" width="100%"></td>
 
 
 ## III. 주요 기능
