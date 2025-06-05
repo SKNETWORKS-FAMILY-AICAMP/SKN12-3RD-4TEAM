@@ -4,7 +4,7 @@
 <table>
   <tr>
     <td align="center">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQsaj4eUsVLHnn85Em20Eu8YtTtMBRkfdPaw&s" width="120px"><br/>
+      <img src="![Uploading image.png…]()" width="120px"><br/>
       <b>김도윤</b>
     </td>
     <td align="center">
