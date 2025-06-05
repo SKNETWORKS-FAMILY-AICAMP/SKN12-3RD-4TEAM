@@ -57,10 +57,10 @@ Ballzzi은 축구 선수 정보와 회사 내부 정보를 모두 처리할 수 
 
 ## II. 시스템 아키텍처 
 
-# 다이어그램
+### 1. 전체 플로우차트
 ![image](https://github.com/user-attachments/assets/c902a87e-b68c-46b0-b1ec-50e5dfec27dd)
 
-# 라우팅 순서도
+### 2. 서브 플로우차트 - 질문 자동 분류 (FM / HR 질문 라우팅)
 <img src="https://github.com/user-attachments/assets/940c4d10-adc9-4726-92d0-d81fe09f1106" width="100%"></td>
 
 
