@@ -129,10 +129,11 @@ AJR/
 - **NumPy**: 수치 연산
 - **Scikit-learn**: 머신러닝 도구
 ```
-## V. gear: 설치 및 실행
+
+## V. 설치 및 실행
 
 ### 1. 환경 설정
-
+```
 ```bash
 # 저장소 클론
 git clone [repository-url](https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN12-3RD-4TEAM.git
@@ -148,7 +149,7 @@ pip install -r requirements.txt
 ```
 
 ### 2. 환경변수 설정
-
+```
 `.env` 파일 생성:
 ```env
 # OpenAI API 설정
