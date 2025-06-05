@@ -1,4 +1,4 @@
-# ⚽ Ballzzi - 축구 선수 & 회사 정보 통합 챗봇
+# ⚽ Ballzzi - RAG구조의 QA챗봇 - 축구선수 분석 및 & 회사 내부정보 기반 QA LLM 시스템
 ## 👥 팀 소개
 
 <table>
