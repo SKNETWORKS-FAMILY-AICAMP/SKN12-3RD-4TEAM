@@ -242,18 +242,6 @@ streamlit run app.py
 3. **메모리 사용량**: 대용량 모델 로드 시 충분한 RAM 필요
 4. **네트워크 의존성**: 실시간 이미지/뉴스 검색 기능
 
-## :handshake: 기여 방법
-
-1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Push to the branch
-5. Create a Pull Request
-
-## :scroll: 라이센스
-
-이 프로젝트는 MIT 라이센스 하에 배포됩니다.
-
 ---
 
 **개발자**: Ballzzi Team  
