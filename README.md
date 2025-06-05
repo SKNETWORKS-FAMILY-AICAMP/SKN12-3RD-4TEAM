@@ -135,8 +135,7 @@ AJR/
 
 ```bash
 # 저장소 클론
-git clone <repository-url>
-cd AJR
+git clone [repository-url](https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN12-3RD-4TEAM.git
 
 # 가상환경 생성 (권장)
 python -m venv venv
