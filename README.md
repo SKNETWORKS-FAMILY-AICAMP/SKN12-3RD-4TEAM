@@ -44,16 +44,16 @@
 </div>
 
 
-## 📋 프로젝트 개요
+## I. 프로젝트 개요
 
 Ballzzi은 축구 선수 정보와 회사 내부 정보를 모두 처리할 수 있는 통합 챗봇 시스템입니다. 질문 라우팅을 통해 축구 관련 질문은 FM(Football Manager) 모듈로, 회사 관련 질문은 HR 모듈로 자동 분류하여 처리합니다.
 
-## 🏗️ 시스템 아키텍처
+## II. 시스템 아키텍처
 
 ![image](https://github.com/user-attachments/assets/c902a87e-b68c-46b0-b1ec-50e5dfec27dd)
 
 
-## 🚀 주요 기능
+## III. 주요 기능
 
 ### 1. 질문 자동 분류 (Question Routing)
 - **모델**: `sentence-transformers/all-MiniLM-L6-v2`
@@ -75,7 +75,7 @@ Ballzzi은 축구 선수 정보와 회사 내부 정보를 모두 처리할 수 
   - 퇴직금 계산기
 - **LLM 지원**: OpenAI GPT 및 HyperCLOVAX
 
-## 📁 디렉토리 구조
+## IV. 디렉토리 구조
 
 ```
 AJR/
@@ -104,7 +104,8 @@ AJR/
     └── data/
         ├── faiss_win/           # 사내 규정 FAISS 인덱스
         └── faiss_org_hr/        # 인사 구조 FAISS 인덱스
-
+```
+```
 - **LangChain**: 4개 패키지 (core, community, openai, experimental)
 - **OpenAI GPT-4o-mini**: 메인 언어 모델
 - **HyperCLOVAX**: 대체 언어 모델 지원
@@ -127,8 +128,8 @@ AJR/
 - **Pandas**: 데이터 프레임 조작
 - **NumPy**: 수치 연산
 - **Scikit-learn**: 머신러닝 도구
-
-## :gear: 설치 및 실행
+```
+## V. gear: 설치 및 실행
 
 ### 1. 환경 설정
 
@@ -151,20 +152,22 @@ pip install -r requirements.txt
 
 `.env` 파일 생성:
 ```env
+# OpenAI API 설정
 OPENAI_API_KEY=your_openai_api_key_here
+# HuggingFace 토큰
 HUGGINGFACE_TOKEN=your_huggingface_token_here
+# 네이버 검색 API
+NAVER_CLIENT_ID=your_naver_id_here
+NAVER_CLIENT_SECRET=your_naver_token_here
+# 모델 설정
 LLM_MODEL=gpt-4o-mini
-TEMPERATURE=0
-MAX_NEW_TOKENS=1024
+# RERANKER_MODEL=BAAI/bge-reranker-v2-m3 # 사용하지 않는 모델은 주석처리
+LLM_MODEL=gpt-4o-mini # 사용하는 모델설정
+# 벡터 데이터베이스 설정
+VECTOR_DB_PATH=HR/data/faiss_win
+VECTOR_DB_PATH_HR=HR/data/faiss_org_hr
 ```
-
-### 3. 프로젝트 상태 점검
-
-```bash
-python check_project.py
-```
-
-### 4. 애플리케이션 실행
+### 3. 애플리케이션 실행
 
 ```bash
 streamlit run app.py
