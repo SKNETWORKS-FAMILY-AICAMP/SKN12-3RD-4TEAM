@@ -61,7 +61,7 @@ Ballzzi은 축구 선수 정보와 회사 내부 정보를 모두 처리할 수 
 
 ![image](https://github.com/user-attachments/assets/c902a87e-b68c-46b0-b1ec-50e5dfec27dd)
 
-### 2. 세부 프로세스 흐름도 - FM / HR 질문 라우팅 (Sub Flowchart - Automated Question Classification)
+### 2. 세부 프로세스 흐름도 - 질문 자동 분류 (Sub Flowchart - Automated Question Classification)
 <img src="https://github.com/user-attachments/assets/940c4d10-adc9-4726-92d0-d81fe09f1106" width="100%"></td>
 
 
