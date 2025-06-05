@@ -1,75 +1,3 @@
-# import streamlit as st
-# import sys
-# import torch
-# # PyTorch 내부 클래스를 Streamlit 감시 대상에서 제거
-# sys.modules['torch.classes'].__path__ = []
-# from FM.FM_GetData_LLM import get_answer_from_question
-# from FM.tools.image_craper import get_player_image_from_bing
-# from question_Routing import classify
-# from HR.agents.agent_executor import process_query
-# st.set_page_config(page_title="⚽ 축구 선수 챗봇", layout="centered")
-# st.title("⚽ 축구 선수 챗봇")
-
-# # 세션 상태 초기화
-# if "messages" not in st.session_state:
-#     st.session_state.messages = []
-# if "pending_input" not in st.session_state:
-#     st.session_state.pending_input = None
-
-# # 예시 질문
-# st.markdown("##### 💬 예시 질문을 클릭해보세요:")
-# example_questions = [
-#     "리오넬 메시에 대해 알려줘",
-#     "호날두의 커리어는 어때?",
-#     "손흥민은 어떤 팀에서 뛰고 있어?",
-#     "네이마르의 특징은?",
-# ]
-
-# cols = st.columns(len(example_questions))
-# for i, question in enumerate(example_questions):
-#     if cols[i].button(question):
-#         st.session_state.pending_input = question
-
-# # 과거 대화 출력
-# for msg in st.session_state.messages:
-#     with st.chat_message(msg["role"]):
-#         st.markdown(msg["content"], unsafe_allow_html=True)
-
-# # 입력 처리
-# prompt = st.chat_input("축구 선수 이름이나 질문을 입력하세요...")
-
-# # 버튼 클릭한 경우 우선 처리
-# if st.session_state.pending_input:
-#     prompt = st.session_state.pending_input
-#     st.session_state.pending_input = None
-
-# # 입력이 있는 경우 GPT 처리
-# if prompt:
-#     st.session_state.messages.append({"role": "user", "content": prompt})
-
-#     if classify(prompt):
-#         reply = process_query(prompt)
-#         with st.chat_message("assistant"):
-#             st.markdown(reply)
-#     else:
-#         reply = get_answer_from_question(prompt)  # reply = list of dicts
-#         full_response = ""
-#         for chat in reply:
-#             print(chat)
-#             full_response += f"### {chat['Name']}\n{chat['설명']}\n\n"
-
-#         # 전체 설명을 하나로 저장
-#         st.session_state.messages.append({"role": "assistant", "content": full_response})
-
-#         # 출력용
-#         with st.chat_message("assistant"):
-#             for chat in reply:
-#                 image = get_player_image_from_bing(chat['Name'])
-#                 if image:
-#                     st.image(image, caption=f"{chat['Name']} 사진", use_container_width=True)
-#                 else:
-#                     st.markdown(f"{chat['Name']}의 이미지를 불러올 수 없습니다.")
-#                 st.markdown(chat['설명'], unsafe_allow_html=True)
 import streamlit as st
 import sys
 import torch
@@ -120,7 +48,6 @@ if st.session_state.pending_input:
     prompt = st.session_state.pending_input
     st.session_state.pending_input = None
 
-# 🔁 입력 처리
 # 🔁 입력 처리
 if prompt:
     st.session_state.messages.append({"role": "user", "content": prompt})

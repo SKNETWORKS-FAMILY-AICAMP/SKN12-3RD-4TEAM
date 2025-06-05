@@ -4,7 +4,7 @@
     8400명의 축구선수 데이터 - 선수이미지를 포함한 세부데이터 검색 및 분석기능
     8개챕터의 모든 사내규정 - 출장비 및 휴가규정 조회 및 설명기능
     변동된 모든 인사정보 - 실시간 인사정보 및 조직도 업데이트 조회기능
-    메세지생성칸 변경없이 모든 정보를 하나의 메세지창에서 조회가능 
+    메세지 입력칸 변경없이 모든 정보를 하나의 메세지창에서 조회가능 
   ```
 ## 👥 팀 소개
 
@@ -94,24 +94,22 @@ AJR/
 │   ├── FM_GetData_LLM.py         # 메인 축구 정보 처리
 │   ├── tools/
 │   │   ├── create_prompt.py      # SQL/자연어 프롬프트 생성
-│   │   ├── SQL_create.py         # SQL 쿼리 생성 체인
-│   │   ├── SQL_execute.py        # SQL 실행 체인
-│   │   └── image_craper.py       # Bing 이미지 크롤링
-│   ├── data/
-│   │   ├── players_position.db   # 축구 선수 데이터베이스 (788KB)
-│   │   └── training_dataset.jsonl # 학습 데이터셋 (14MB)
-│   ├── code/                     # 추가 코드
-│   └── finetuning/               # 파인튜닝 관련
+│   │   ├── SQL_create.py         # SQL 프롬프트 템플릿 반환
+│   │   ├── SQL_execute.py        # SQL 프롬프트 템플릿 반환
+│   │   └── image_craper.py       # Bing "BING"에서 이미지 크롤링
+│   └── data/
+│       └── players_position.db   # 축구 선수 데이터베이스 ( 정형DB )
 │
 └── HR/                           # Human Resources 모듈
     ├── agents/
     │   └── agent_executor.py     # Langchain Agent 실행기
     ├── tools/
     │   └── rag_tool.py          # RAG 도구 모음  
-    └── data/
-        ├── faiss_win/           # 사내 규정 FAISS 인덱스
-        └── faiss_org_hr/        # 인사 구조 FAISS 인덱스
+    └── data/                    
+        ├── faiss_win/           # 사내 규정 FAISS 인덱스 ( 벡터DB )
+        └── faiss_org_hr/        # 인사 구조 FAISS 인덱스 ( 벡터DB )
 ```
+
 ```
 - **LangChain**: 4개 패키지 (core, community, openai, experimental)
 - **OpenAI GPT-4o-mini**: 메인 언어 모델

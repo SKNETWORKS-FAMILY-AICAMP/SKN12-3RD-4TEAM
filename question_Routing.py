@@ -145,6 +145,3 @@ def classify(text: str) -> bool:
     vec = model.encode([text])
     D, I = index.search(np.array(vec), k=1)
     return labels[I[0][0]] == "other"
-
-# if __name__ == "__main__":
-#     print(classify("사장은 무슨 일하나요?"))
