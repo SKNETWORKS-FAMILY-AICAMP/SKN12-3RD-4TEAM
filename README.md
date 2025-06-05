@@ -48,7 +48,7 @@
 
 Ballzzi은 축구 선수 정보와 회사 내부 정보를 모두 처리할 수 있는 통합 챗봇 시스템입니다. 질문 라우팅을 통해 축구 관련 질문은 FM(Football Manager) 모듈로, 회사 관련 질문은 HR 모듈로 자동 분류하여 처리합니다.
 
-## II. 시스템 아키텍처
+## II. 시스템 아키텍처 
 
 ![image](https://github.com/user-attachments/assets/c902a87e-b68c-46b0-b1ec-50e5dfec27dd)
 
