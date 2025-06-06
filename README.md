@@ -67,8 +67,7 @@ LLM: GPT-4o-mini, 임베딩: KURE-v1, Reranker: bge-reranker-v2-m3-ko
 └── "soccer" → get_answer_from_question() → SQL + LLM + 이미지
 ```
 ### 1. 전체 프로세스 흐름도 (Main Flowchart)
-
-![image](https://github.com/user-attachments/assets/c902a87e-b68c-46b0-b1ec-50e5dfec27dd)
+![image](https://github.com/user-attachments/assets/56d13dfc-d8a1-4b34-83a7-3c72e48df6ba)
 
 ### 2. 세부 프로세스 흐름도 - 질문 자동 분류 (Sub Flowchart - Automated Question Classification)
 <img src="https://github.com/user-attachments/assets/940c4d10-adc9-4726-92d0-d81fe09f1106" width="100%"></td>
