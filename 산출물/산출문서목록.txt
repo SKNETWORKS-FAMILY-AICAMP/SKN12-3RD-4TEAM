@@ -1,0 +1,51 @@
+I. 원본파일
+ - DM_rules.docx : (HR모듈)사내규정 파일
+ - HR information.xlsx : (HR모듈)인사정보 파일
+ - org_chart.docx : (HR모듈)회사 조직도
+ - FM 2023.csv : (FM모듈)선수정보파일
+
+II FM모듈 관련 파일
+
+III. HR 모듈
+
+1. 임베딩 코드
+ - embedding_win.ipynb : 내부규정 임베딩 코드
+ - embedding_hr.ipynb : 인사정보 임베딩 코드
+
+2. 청크 파일
+ - dm_chunks_window.json : 내부규정 청크보완 파일
+ - combined_chunks.json : 인사정보 청크 파일
+
+3. 질문지 파일
+ - eval_questions_window.jsonl : 내부규정 (청크보완) 질문지
+ - eval_questions_gpt.jsonl : 인사정보 질문지지
+
+4. 테스트 파일
+ - test_win.ipynb : 내부 규정 평가 코드
+ - test_hr.ipynb : 인사 정보  평가 코드
+ - rag_eval.py : 테스트 함수
+
+5. 벡터DB
+ - faiss_win : 내부규정 벡터DB폴더
+ - faiss_org_hr : 인사정보 벡터DB 폴더
+
+IV. 파인튜닝 결과보고서
+
+
+V. 프로젝트 평가파일
+
+1. Ballzzi_RAG기반의QA챗봇.pptx : 발표 PPT
+
+2. 아키텍처
+ - 아키텍처 - 전체 프로세스 흐름도 
+ - 아키텍처 - 세부 자동분류 라우팅순서도
+ - 아키텍처 - 자동분류_순서도
+
+3. 데이터 전처리 및 결과서
+ - FM 모듈 : FM_데이터 전처리 정의서
+ - HR 모듈 : HR_데이터수집_작업_테스트결과서
+
+4. 작업서
+ - 작업서_FM모듈
+ - 작업서_자동분류
+ - 작업서_크롤링
