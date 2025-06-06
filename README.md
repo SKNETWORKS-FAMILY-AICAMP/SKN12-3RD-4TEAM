@@ -52,7 +52,12 @@
 
 
 ## I. 프로젝트 개요
-```
+### 1. 목적
+ - 다양한 형태의 데이터와 LLM 연동하여 UI시각화
+ - 테이블데이터,혼합형데이터(글,숫자,표)를 각각 정형DB와 벡터DB로 구축하여 LLM와 연동
+ - 정형DB : 테이블데이터
+ - 벡터DB : 혼합형데이터(글,숫자,표) / 테이블데이터 / 특문구조형문서
+ ```
 이중 도메인 시스템: FM(축구) + HR(회사 규정/인사)
 자동 질문 분류 및 모듈 라우팅
 Streamlit 기반 UI / LangChain 기반 Agent
@@ -62,9 +67,9 @@ LLM: GPT-4o-mini, 임베딩: KURE-v1, Reranker: bge-reranker-v2-m3-ko
 ## II. 시스템 아키텍처 
 ### 작동 흐름 요약
 ```
-사용자 입력 → classify() → 도메인 판단
-├── "company" → process_query() → LangChain Agent
-└── "soccer" → get_answer_from_question() → SQL + LLM + 이미지
+FM/HR 분류기 : 사용자 입력 → classify() → 도메인 판단
+├── FM : "soccer" → get_answer_from_question() → SQL + LLM + 이미지
+└── HR : "company" → process_query() → LangChain Agent → hybrid search → GPT
 ```
 ### 1. 전체 프로세스 흐름도 (Main Flowchart)
 ![image](https://github.com/user-attachments/assets/56d13dfc-d8a1-4b34-83a7-3c72e48df6ba)
