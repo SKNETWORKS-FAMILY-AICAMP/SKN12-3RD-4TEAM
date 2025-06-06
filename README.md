@@ -52,14 +52,27 @@
 
 
 ## I. 프로젝트 개요
-
-Ballzzi은 축구 선수 정보와 회사 내부 정보를 모두 처리할 수 있는 통합 챗봇 시스템입니다. 질문 라우팅을 통해 축구 관련 질문은 FM(Football Manager) 모듈로, 회사 관련 질문은 HR 모듈로 자동 분류하여 처리합니다.
-
+### 1. 목적
+ - 다양한 형태의 데이터와 LLM 연동하여 UI시각화
+ - 테이블데이터,혼합형데이터(글,숫자,표)를 각각 정형DB와 벡터DB로 구축하여 LLM와 연동
+ - 정형DB : 테이블데이터
+ - 벡터DB : 혼합형데이터(글,숫자,표) / 테이블데이터 / 특문구조형문서
+ ```
+이중 도메인 시스템: FM(축구) + HR(회사 규정/인사)
+자동 질문 분류 및 모듈 라우팅
+Streamlit 기반 UI / LangChain 기반 Agent
+LLM: GPT-4o-mini, 임베딩: KURE-v1, Reranker: bge-reranker-v2-m3-ko
+데이터: FAISS Vector DB + SQLite
+```
 ## II. 시스템 아키텍처 
-
-### 1. - 전체 프로세스 흐름도 (Main Flowchart)
-
-![image](https://github.com/user-attachments/assets/c902a87e-b68c-46b0-b1ec-50e5dfec27dd)
+### 작동 흐름 요약
+```
+FM/HR 분류기 : 사용자 입력 → classify() → 도메인 판단
+├── FM : "soccer" → get_answer_from_question() → SQL + LLM + 이미지
+└── HR : "company" → process_query() → LangChain Agent → hybrid search → GPT
+```
+### 1. 전체 프로세스 흐름도 (Main Flowchart)
+![image](https://github.com/user-attachments/assets/56d13dfc-d8a1-4b34-83a7-3c72e48df6ba)
 
 ### 2. 세부 프로세스 흐름도 - 질문 자동 분류 (Sub Flowchart - Automated Question Classification)
 <img src="https://github.com/user-attachments/assets/940c4d10-adc9-4726-92d0-d81fe09f1106" width="100%"></td>
