@@ -11,23 +11,23 @@
 <table>
   <tr>
     <td align="center">
-      <img src="https://cdn.discordapp.com/attachments/1377151538115645483/1379986861845385278/image.png?ex=68423c6a&is=6840eaea&hm=63b8a029d4e9a2879ea8403a0eac4d640e76c805f4e5517ad6b569416f194344&" width="120px"><br/>
+      <img src="./img/스크린샷 2025-06-05 095502.png" width="120px"><br/>
       <b>김도윤</b>
     </td>
     <td align="center">
-      <img src="https://cdn.discordapp.com/attachments/1377151538115645483/1379986704823488512/2025-06-05_095123.png?ex=68423c45&is=6840eac5&hm=0f462a6a9fbc52731fc9bb0a9b246b4a90374fef88d6313b9df6191a56687ed8&" width="120px"><br/>
+      <img src="./img/스크린샷 2025-06-05 095123.png" width="120px"><br/>
       <b>최요섭</b>
     </td>
     <td align="center">
-      <img src="https://cdn.discordapp.com/attachments/1377151538115645483/1379986704366305413/2025-06-05_095207.png?ex=68423c45&is=6840eac5&hm=6e4b19628da125993085d4416d1e1b4f6ee6d21aaef57084125c2cf61eab3ad7&" width="120px"><br/>
+      <img src="./img/스크린샷 2025-06-05 095207.png" width="120px"><br/>
       <b>김재현</b>
     </td>
     <td align="center">
-      <img src="https://cdn.discordapp.com/attachments/1377151538115645483/1379986703820787732/2025-06-05_095306.png?ex=68423c45&is=6840eac5&hm=5187debc0cc1738be3d44eae7ac7ade23add60eb8d407584f6276bbd8a35190d&" width="120px"><br/>
+      <img src="./img/스크린샷 2025-06-05 095306.png" width="120px"><br/>
       <b>이석원</b>
     </td>
     <td align="center">
-      <img src="https://cdn.discordapp.com/attachments/1377151538115645483/1379986703288242266/2025-06-05_095415.png?ex=68423c44&is=6840eac4&hm=457c70b504816cf4dca7a19facaee9e6c8669f9700fb97dc39a167e95f88b04e&" width="120px"><br/>
+      <img src="./img/스크린샷 2025-06-05 095415.png" width="120px"><br/>
       <b>윤권</b>
     </td>
   </tr>
